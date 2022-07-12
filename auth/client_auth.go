@@ -13,7 +13,7 @@ type ClientAuth struct {
 	ClientSecret string `json:"client_secret"`
 }
 
-func GetClientAuth() *ClientAuth {
+func readClientAuth() *ClientAuth {
 	pwd, err := os.Getwd()
 	if err != nil {
 		panic(err)

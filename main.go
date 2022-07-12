@@ -6,7 +6,6 @@ import (
 )
 
 func main() {
-	clientAuth := auth.GetClientAuth()
-	log.Println(clientAuth.ClientId)
-	log.Println(clientAuth.ClientSecret)
+	clientCredential := auth.GetClientCredentials()
+	log.Printf("%+v", clientCredential)
 }
